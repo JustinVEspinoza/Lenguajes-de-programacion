@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Reportes" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="93214ce6-07f5-468a-960d-836522a26a5c">
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_menu.`codigoPlatillo` AS tb_menu_codigoPlatillo,
+     tb_menu.`descripcion_platillo` AS tb_menu_descripcion_platillo,
+     tb_menu.`calorias` AS tb_menu_calorias,
+     tb_menu.`precio` AS tb_menu_precio,
+     tb_menu.`descuento` AS tb_menu_descuento,
+     tb_menu.`nombre_platillo` AS tb_menu_nombre_platillo,
+     tb_menu.`racion` AS tb_menu_racion
+FROM
+     tb_menu]]>
+	</queryString>
+	<field name="tb_menu_codigoPlatillo" class="java.lang.Integer"/>
+	<field name="tb_menu_descripcion_platillo" class="java.lang.String"/>
+	<field name="tb_menu_calorias" class="java.lang.String"/>
+	<field name="tb_menu_precio" class="java.lang.Integer"/>
+	<field name="tb_menu_descuento" class="java.lang.Integer"/>
+	<field name="tb_menu_nombre_platillo" class="java.lang.String"/>
+	<field name="tb_menu_racion" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

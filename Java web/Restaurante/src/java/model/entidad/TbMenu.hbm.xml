@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 23-jun-2020 16:29:37 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.entidad.TbMenu" table="tb_menu" catalog="restaurante" optimistic-lock="version">
+        <id name="codigoPlatillo" type="java.lang.Integer">
+            <column name="codigoPlatillo" />
+            <generator class="identity" />
+        </id>
+        <property name="descripcionPlatillo" type="string">
+            <column name="descripcion_platillo" length="50" not-null="true" />
+        </property>
+        <property name="calorias" type="string">
+            <column name="calorias" length="50" not-null="true" />
+        </property>
+        <property name="precio" type="int">
+            <column name="precio" not-null="true" />
+        </property>
+        <property name="descuento" type="int">
+            <column name="descuento" not-null="true" />
+        </property>
+        <property name="nombrePlatillo" type="string">
+            <column name="nombre_platillo" length="50" not-null="true" />
+        </property>
+        <property name="racion" type="int">
+            <column name="racion" not-null="true" />
+        </property>
+        <property name="imageurl" type="string">
+            <column name="imageurl" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>
