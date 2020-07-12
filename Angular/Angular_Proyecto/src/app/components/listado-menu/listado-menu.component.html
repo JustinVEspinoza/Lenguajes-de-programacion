@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="col-md-10">
+        <div class="search">
+            <form class="formL">
+                <label class="letter-12">Platillos:</label>
+                <input [(ngModel)]="clave" name="clave"class="form-control form-search" placeholder="Buscar"  (keyup)="searchbyFilters()">            
+            </form>  
+
+            <form class="formR">
+                <a href="./Menu/agregar" class="btn btn-add">Agregar</a>
+            </form>
+        </div>
+
+        <div id="table" class="table-center">
+            <table>
+                <tr>
+                    <th>Platillo</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Descuento</th>
+                    <th>Ración</th>
+                    <th>Calorias</th>
+                    <th>Acciones</th>   
+                </tr>
+            
+                
+            
+            
+            <tr *ngFor="let m of menus">
+                 <td>{{m.nombrePlatillo}}</td>
+                 <td>{{m.descripcionPlatillo}}</td>
+                 <td>{{m.descuento}}</td>
+                 <td>{{m.precio}}</td>
+                 <td>{{m.racion}}</td>
+                 <td>{{m.calorias}}</td>
+                 <td class="last-col" > 
+                    <a class="btn btn-edit" href="Menu/Modificar/{{m.codigoPlatillo}}">Editar</a>
+                <a  class="btn btn-delete" (click)="delete_platillo( m.codigoPlatillo )">Eliminar</a>
+                </td>
+            </tr>
+           
+            
+            
+            
+            </table>
+        </div>
+    </div>
+</div>

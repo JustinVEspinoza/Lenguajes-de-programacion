@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="registro">
+        <p id="titulo">Modificar Platillo</p>
+        <form>
+
+            <input  [(ngModel)]="menubyId.nombrePlatillo" name="nombrePlatillo" class="form-control" value="{{menubyId.nombrePlatillo}}"  (onkeypress)="validarPalabras($event)" placeholder="Nombre"/>
+            <input [(ngModel)]="menubyId.descripcionPlatillo" name="descripcionPlatillo" class="form-control text-area" (onkeypress)="validarPalabras($event)" placeholder="descripción"/>
+            <input [(ngModel)]="menubyId.descuento" name="descuento" class="form-control" value="{{menubyId.descuento}}" (onkeypress)="validarNumeros($event)" placeholder="descuento"/>
+            <input  [(ngModel)]="menubyId.precio" name="precio" class="form-control" value="{{menubyId.precio}}" (onkeypress)="validarNumeros($event)" placeholder="precio"/>
+            <input [(ngModel)]="menubyId.racion" name="racion" class="form-control" value="{{menubyId.racion}}" (onkeypress)="validarNumeros($event)" placeholder="ración"/>
+            <input [(ngModel)]="menubyId.calorias" name="calorias" class="form-control" value="{{menubyId.calorias}}" (onkeypress)="validarNumeros($event)" placeholder="calorias"/>
+            <div class="container">
+                <input type="button" value="Modificar" class="btn btn-primary" (click)="update_platillo()"/>
+                <input type="hidden" id="txtCodigo" value="{{menubyId.codigoPlatillo}}" />
+            </div>
+
+        </form>
+
+    </div>
+</div>

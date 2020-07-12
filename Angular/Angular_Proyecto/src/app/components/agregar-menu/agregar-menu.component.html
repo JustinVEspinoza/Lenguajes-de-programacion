@@ -1,0 +1,22 @@
+
+<div class="container">
+    <div class="registro">
+        <p id="titulo">Agregar Platillo</p>
+
+        <form method="POST" action="" enctype="multipart/form-data">
+
+           <input  [(ngModel)]="menu.nombrePlatillo" name="nombrePlatillo" class="form-control" (onkeypress)="validarPalabras($event)" placeholder="Nombre"/>
+            <input [(ngModel)]="menu.descripcionPlatillo" name="descripcionPlatillo" class="form-control text-area" (onkeypress)="validarPalabras($event)" placeholder="Descripcion"/>
+            <input [(ngModel)]="menu.descuento" name="descuento" class="form-control"  (onkeypress)="validarNumeros($event)" placeholder="Descuento"/>
+            <input  [(ngModel)]="menu.precio" name="precio" class="form-control" (onkeypress)="validarNumeros($event)" placeholder="Precio"/>
+            <input [(ngModel)]="menu.racion" name="racion" class="form-control"  (onkeypress)="validarNumeros($event)" placeholder="Racion"/>
+            <input [(ngModel)]="menu.calorias" name="calorias" class="form-control"  (onkeypress)="validarNumeros($event)" placeholder="Calorias"/>
+            <input type="file" ngFileSelect [options]="options" (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput" multiple>
+          
+            <div class="container">
+                <input type="submit" value="Agregar" (click)="add_platillo()" class="btn btn-primary" />
+            </div>
+
+        </form>
+    </div>
+</div>

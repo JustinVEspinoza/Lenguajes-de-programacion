@@ -1,0 +1,308 @@
+/*
+***************************************************************************************************
+*************************************** Structure menu ********************************************
+***************************************************************************************************
+*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ 
+
+
+ 
+.menu_bar {
+	display:none;
+	z-index: 99;
+}
+
+.menu_bar3 {
+	display:none;
+	z-index: 99;
+}
+ 
+header {
+	width: 100%;
+	margin-top: 0px;
+}
+
+    header .administrador {
+	width: 100%;
+	height:100px;
+        background: #ea7a1c !important;
+        z-index: 1000;
+	margin-left: auto;
+	margin-right: auto;
+
+    }
+
+     header .empleado {
+	width: 100%;
+	height:100px;
+        background: #4FEB14 !important;
+        z-index: 1000;
+	margin-left: auto;
+	margin-right: auto;
+
+    }
+ /*display:none and float:none, permite manipular li de forma independiente*/
+ header nav ul{
+     list-style:none;
+	display: grid;
+        float: right;
+	text-align: center;
+ }
+.header_admin nav ul {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	/*justify-items: end;*/	
+}
+
+.header_empleado nav ul {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	/*justify-items: end;*/	
+}
+ 
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+ /*header nav ul li a:hover {
+      color:#BDB6B1;
+ }*/
+header .administrador ul li:hover {
+	background:#E1751B;
+       
+}
+ 
+header nav ul li a {
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+        font-size: 1;
+    font-weight:bold;
+    font-family: Verdana;
+
+}
+ 
+header nav ul li a span {
+	margin-right:10px;
+}
+ 
+header nav ul li:hover .children {
+	display:block;
+}
+ 
+header .administrador ul li .children {
+	display: none;
+	background:#FB9947;
+	position: absolute;
+	width: 100%;
+	padding: 0px;
+	z-index:1000;
+}
+header .cliente ul li .children {
+	display: none;
+	background:#75b6dc;
+	position: absolute;
+	width: 100%;
+	padding: 0px;
+	z-index:1000;
+}
+header .empleado ul li .children {
+	display: none;
+	background:#4FEB14;
+	position: absolute;
+	width: 100%;
+	padding: 0px;
+	z-index:1000;
+}
+ 
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+ 
+header nav ul li .children li a {
+	display: block;
+}
+ 
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+}
+ 
+header nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
+}
+/*
+***************************************************************************************************
+*************************************** Icon structure *****************************************
+***************************************************************************************************
+*/
+.size-icon {
+    height:50px;
+}
+
+.inline {
+    display:inline-block;
+}
+
+.i::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+  .icon-Menu-line::before {
+    font-family: "Font Awesome 5";
+    font-weight: 900;
+    color:white;
+    content: url(/images/web/list_bullet_icon_124933.ico);
+}
+ /*
+***************************************************************************************************
+*************************************** resolutions ********************************************
+***************************************************************************************************
+*/
+@media screen and (max-width: 950px) {
+	body {
+		padding-top:66px;
+	}
+
+    .menu_bar {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background: #ea7a1c !important; 
+    }
+    
+     .menu_bar3 {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background: #4FEB14 !important; 
+    }
+	
+        .header_admin nav ul {
+		list-style:none;
+		grid-template-columns: 1fr;
+		grid-template-rows:12fr;
+		float: left;
+		width: 100%;
+		text-align: left;
+	}
+        
+        .header_empleado nav ul {
+		list-style:none;
+		grid-template-columns: 1fr;
+		grid-template-rows:12fr;
+		float: left;
+		width: 100%;
+		text-align: left;
+	}
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 10px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+		float: left
+	}
+        
+        .menu_bar3 .bt-menu {
+		display: block;
+		padding: 10px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+		float: left
+	}
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+        
+         .menu_bar3 span {
+		float: right;
+		font-size: 40px;
+	}
+	header .administrador {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		position: 80;
+		overflow: scroll;
+	}
+       
+	header .empleado{
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		position: 80;
+		overflow: scroll;
+	}
+	header .administrador ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+        
+        header .empleado ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+	header nav ul li a {
+		display: block;
+	}
+ 
+	header nav ul li:hover .children {
+		display: grid;
+	}
+
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+		float: left;
+	}
+        header .administrador ul li .children {
+		width: 100%;
+		position: relative;
+		float: left;
+	}
+        
+        header .empleado ul li .children {
+		width: 100%;
+		position: relative;
+		float: left;
+	}
+	header nav ul li .children li {
+		text-align: left;
+		float: left;
+	}
+	header nav ul li .children li a {
+		margin-left:20px;
+		float: left;
+	}
+ 
+	header nav ul li .caret {
+		float: right;
+	}
+}

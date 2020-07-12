@@ -1,0 +1,106 @@
+.menu-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/*caracteristicas generales de botones*/
+.btn { 
+    margin-top:2%;
+    width:80px;
+    height: 40px;
+}
+
+/*Boton Para Registrar*/
+.btn-register{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 13px; /*Tamaño de la fuente*/
+    color: #ffffff;
+    background-color: #54e32e; /*color del boton*/
+    border-radius: 6px;
+    border: 1px solid #54e32e; /*Borde del boton*/
+}
+  
+.btn-register:hover{ /*Cuando le pasa el mouse por arriba*/
+    color: #ffffff;
+    background-color: #3dde12;
+}
+
+.btn-register:focus{/*Cuando le das click*/
+    background-color:#29bf01;
+    border:none;
+    border-bottom: 3px solid #29bf01;
+}
+
+/*Boton Para Agregar*/
+.btn-add{
+    text-decoration: none;
+    padding: 10px;
+
+    font-weight: 600;
+    font-size: 13px; /*Tamaño de la fuente*/
+    color: #ffffff;
+    background-color: #35c4e4; /*color del boton*/
+    border-radius: 6px;
+    border: 1px solid #35c4e4; /*Borde del boton*/
+}
+  
+.btn-add:hover{ /*Cuando le pasa el mouse por arriba*/
+    color: #ffffff;
+    background-color: #18b6da;
+}
+
+.btn-add:focus{/*Cuando le das click*/
+    background-color:#00b7e0;
+    border:none;
+    border-bottom: 3px solid #00b7e0;
+}
+
+/*Boton Para Editar*/
+.btn-edit{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 13px; /*Tamaño de la fuente*/
+    color: #ffffff;
+    background-color: #ec881e; /*color del boton*/
+    border-radius: 6px;
+    border: 1px solid #ec881e; /*Borde del boton*/
+}
+  
+.btn-edit:hover{ /*Cuando le pasa el mouse por arriba*/
+    color: #ffffff;
+    background-color: #d3791b;
+}
+
+.btn-edit:focus{/*Cuando le das click*/
+    background-color: #b86b1a;
+    border:none;
+    border-bottom: 3px solid #b86b1a;
+}
+
+/*Boton Para Eliminar*/
+.btn-delete{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 13px; /*Tamaño de la fuente*/
+    color: #ffffff;
+    background-color: #f02c24; /*color del boton*/
+    border-radius: 6px;
+    border: 1px solid #f02c24; /*Borde del boton*/
+}
+  
+.btn-delete:hover{ /*Cuando le pasa el mouse por arriba*/
+    color: #ffffff;
+    background-color: #d8211a;
+   cursor: pointer;
+}
+
+.btn-delete:focus{/*Cuando le das click*/
+    background-color: #bd1610;
+    border:none;
+    border-bottom: 3px solid #bd1610;
+}
