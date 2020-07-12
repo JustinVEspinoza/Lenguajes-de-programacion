@@ -1,0 +1,162 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family: helvetica Neue;
+	font-weight: lighter;
+}
+
+
+
+section#registro{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -300px;
+	width:400px;
+	min-height: 100px;
+	background-color: white;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+p#titulo{
+	font-size: 1.6em;
+	text-align: center;
+	margin-top: 20px;
+}
+label,.lbl {
+    word-spacing: 0px;
+    font-weight: bolder ;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+     font-family: Verdana;
+     font-size: 1;
+}
+
+input[type="submit"]{
+	margin:20px;
+	margin-bottom: 20px;
+	width:360px;
+	height: 40px;
+	outline: none;
+	border:0px;
+	background-color: #75b6dc;
+	color: white;
+	font-size: 1.2em;
+	border-radius: 5px;
+	-webkit-box-shadow:0px 5px 0px #659dbf;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

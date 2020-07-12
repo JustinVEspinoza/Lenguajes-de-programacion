@@ -1,0 +1,153 @@
+.container-flex{
+    display:flex;
+    justify-content: center;
+}
+
+.scale-width-100{
+    width:100%;
+    height: 79vh;
+}
+
+.search{
+    width:100%;
+    display: grid;
+    grid-template-columns:8fr 2fr;
+}
+
+.registry-form{
+    width:30%;/*Ancho*/
+    background: #FFFFFF;
+    background: -moz-radial-gradient(center, #FFFFFF 0%, #F2F2F2 0%, #B5B5A7 100%);
+    background: -webkit-radial-gradient(center, #FFFFFF 0%, #F2F2F2 0%, #B5B5A7 100%);
+    margin-top: 5%;
+    height:37vh; /*Largo*/
+    -webkit-box-shadow: 5px 5px 15px 5px #c2bebe; 
+    box-shadow: 10px 10px 15px 10px #939393; /*sombreado en los bordes*/
+    border-radius: 10px;   /*bordes circulares*/
+}
+
+.form-lbl {
+    display:flex;   
+    justify-content: flex-end;
+    margin-top: 4%;
+    text-align: center;
+    align-items: center;
+}
+
+.form-control {   
+    height:35px;
+    padding: 8px 20px;
+    width:90%;
+    margin-right: 2%;
+    margin-left:2%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-sizing: border-box;
+    font: 18px arial, sans-serif;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; 
+    background-color: #C4C4C4;
+}
+
+.form-search{
+    margin-right: 1%;
+    margin-left:3%;
+}
+
+.container-col {
+    display: flex;
+    justify-content:center;
+    height:10vh;    
+}
+
+.container-col-btn {
+    display: flex;
+    justify-content:space-around;
+    height:5vh;
+}
+
+.form-control{
+    width:98%;
+ }
+ 
+.form-lbl {
+    justify-content: flex-start;
+    width:100%;
+}
+
+.container-grid {
+    display:grid;
+    width:100%;
+}
+
+.formL{
+    display: flex;
+    padding-left: 1%;
+    padding-right: 5%; /*para el tamaño del input*/
+    text-align: center;
+    align-items: center;
+}
+
+.formR{
+    display: flex;
+    justify-content: flex-end;
+        align-items: center;
+    width:90%;
+}
+
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+table {
+    text-align: center;
+    width:100%;
+}
+
+table th, table td {
+      text-align: center;
+      
+}
+table td:nth-child(1) {
+    width:150px;
+  }
+.last-col {
+    width:200px;
+    display:flex;
+}
+.text-area{
+    height:50px;
+}
+
+@media only screen and (max-width: 700px) {
+   .last-col {
+        width:400px;
+    }
+    table{
+        width:1000px;
+    }
+    .form-control{
+        width:95%;
+    }
+    
+    
+    
+}
