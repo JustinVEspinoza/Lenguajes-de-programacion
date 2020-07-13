@@ -1,8 +1,0 @@
-public class ClaseString{
-  
-  public static void main(String args[]){
-    String cadenaTexto="Hola";
-    int numero=0;
-    System.out.println(cadenaTexto.charAt(0));
-  }
-}
