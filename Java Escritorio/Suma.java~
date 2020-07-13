@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane; 
+public class Suma { 
+  public static void main(String args[]) { 
+    String primerNumero, segundoNumero; 
+    float num1, num2, suma; 
+    primerNumero = JOptionPane.showInputDialog("Ingrese el pri. núm:"); 
+    segundoNumero = JOptionPane.showInputDialog("Ingrese el sdo núm:"); 
+// Conversión desde String a tipo double 
+    num1 = Float.parseFloat(primerNumero); 
+    num2 = Float.parseFloat(segundoNumero); 
+// sumar los números 
+    suma = num1 + num2; 
+// desplegar el resultado 
+    JOptionPane.showMessageDialog(null,"La suma es " + suma, 
+                                  "Resultados", JOptionPane.PLAIN_MESSAGE); 
+  }// fin del método principal 
+} // fin de clase
