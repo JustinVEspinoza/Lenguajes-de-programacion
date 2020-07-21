@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20190813-220051">
+  <project autorefresh="false" main="Principal" root="" work="">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="Controller.java" package="" timestamp="21-Jul-2020 17:22:46">
+        <select from="913" to="913"/>
+        <scroll column="680" row="0"/>
+      </file>
+      <file name="GUI.java" package="" timestamp="21-Jul-2020 16:48:44">
+        <select from="913" to="913"/>
+        <scroll column="680" row="0"/>
+      </file>
+      <file name="Principal.java" package="" timestamp="21-Jul-2020 16:49:59">
+        <select from="913" to="913"/>
+        <scroll column="680" row="0"/>
+      </file>
+      <file name="LogicaVectores.java" package="" timestamp="21-Jul-2020 17:04:20">
+        <select from="913" to="913"/>
+        <scroll column="680" row="0"/>
+      </file>
+      <file name="LogicaGeneral.java" package="" timestamp="21-Jul-2020 17:17:04">
+        <select from="913" to="913"/>
+        <scroll column="680" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath/>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>
