@@ -1,0 +1,38 @@
+public class Logica{
+  public int[][] llenarMatriz(int[][] matriz){
+    for(int i=0;i<matriz.length;i++){//Filas
+      for(int j=0;j<matriz[0].length;j++){//Columnas
+        matriz[i][j]=(int)(Math.random()*9)+1;
+      }
+    }
+    return matriz;
+  }
+  
+  public String[][] formarA(String[][] matriz){
+    int columnas=matriz[0].length;
+    for(int i=0;i<matriz.length;i++){//Filas
+      for(int j=0;j<matriz[0].length;j++){//Columnas
+        if(columnas-i==j || columnas+i==j){
+          matriz[i][j]=" * ";
+        }else{
+          if(i==matriz.length/2 && columnas-i<=j && columnas+i>=j){
+            matriz[i][j]=" * ";
+          }
+        }
+      }
+    }
+    return matriz;
+  }
+  public void imprimir(int[][] matriz){
+    String imprimir="";
+    for(int i=0;i<matriz.length;i++){//Filas
+      for(int j=0;j<matriz[0].length;j++){//Columnas
+       // System.out.println(matriz[i][j]);
+        imprimir+="["+matriz[i][j]+"]";
+      }
+      imprimir+="\n";
+    }
+    System.out.println(imprimir);
+    
+  }
+}

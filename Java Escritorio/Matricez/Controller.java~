@@ -1,0 +1,14 @@
+public class Controller{
+  Logica logica;
+  public Controller(){
+    logica=new Logica();
+    control();
+  }
+  
+  public void control(){
+    int[][] matriz=new int[5][9];
+    int[][] matriz=new int[5][9];
+    matriz=logica.llenarMatriz(matriz);
+    logica.imprimir(matriz);
+  }
+}
