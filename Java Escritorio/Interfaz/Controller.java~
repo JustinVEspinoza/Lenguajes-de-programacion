@@ -1,0 +1,21 @@
+
+public class Controller{
+  //
+  int contador;//variable global
+  public Controller(){
+    contador=0;
+    control();
+  }
+  public void control(){
+    int contador=0;//variables locales
+    System.out.println(this.contador+" "+contador);
+  }
+  public void control2(){
+    
+    System.out.println(contador);
+  }
+  public void control3(){
+    System.out.println(contador);
+  }
+  
+}
